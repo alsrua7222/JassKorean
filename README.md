@@ -1,2 +1,2 @@
-# JassKorean
-Jass전용 한국어 패치
+# wc3_Translate
+외국맵 한국어 패치
