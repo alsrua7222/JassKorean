@@ -1,0 +1,13 @@
+{
+    "name": "이름",
+    "properNames": "고유 이름",
+    "awakenTip": "능력 설명",
+    "tip": "설명",
+    "uberTip": "추가 설명",
+    "riviveTip": "부활 설명",
+    "researchTip": "연구 설명",
+    "researchUberTip": "연구 추가 설명",
+    "unTip": "취소 설명",
+    "unUberTip": "취소 추가 설명",
+    "descriptions": "설명"
+}
