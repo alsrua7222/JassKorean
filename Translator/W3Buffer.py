@@ -11,11 +11,12 @@ class W3Buffer:
         # 포인터 위치 바꾸는 방법 많다. - seek()를 써라. or 복잡하게 구현해라.
         buffer = bytearray()
         with open(self._buffer, "rb") as f:
-            cache = 1
+            cache = -1
             while True:
                 # string 이면 계속 1씩 받다가 \0이 나오면 멈춤
                 data = bytes()
-                offset = self.getOffset()
+                if cache != self._type:
+                    offset = self.getOffset()
 
                 if self._type == 3:
                     while True:
@@ -34,7 +35,7 @@ class W3Buffer:
                     yield buffer.decode()
                     buffer.clear()
         return
-        
+
     def getOffset(self) -> int:
         if self._type in [0, 3]:
             return 1
